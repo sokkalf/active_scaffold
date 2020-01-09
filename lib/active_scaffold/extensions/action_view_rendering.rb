@@ -128,14 +128,14 @@ module ActiveScaffold #:nodoc:
   end
 end
 
-module ActionView
-  LookupContext.class_eval do
-    prepend ActiveScaffold::LookupContext
-  end
-
-  module Helpers
-    Base.class_eval do
-      include ActiveScaffold::RenderingHelper
-    end
-  end
-end
+#module ActionView
+#  LookupContext.class_eval do
+#    prepend ActiveScaffold::LookupContext
+#  end
+#
+#  module Helpers
+#    Base.class_eval do
+#      include ActiveScaffold::RenderingHelper
+#    end
+#  end
+#end
